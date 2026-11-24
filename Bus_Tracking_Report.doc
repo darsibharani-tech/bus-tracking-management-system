@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+<meta charset="utf-8">
+<title>Bus Tracking and Management Application - Project Report</title>
+<!--[if gte mso 9]>
+<xml>
+<w:WordDocument>
+<w:View>Print</w:View>
+<w:Zoom>100</w:Zoom>
+<w:DoNotOptimizeForBrowser/>
+</w:WordDocument>
+</xml>
+<![endif]-->
+<style>
+@page {
+    size: A4;
+    margin: 1.0in;
+    mso-header-margin: 0.5in;
+    mso-footer-margin: 0.5in;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    line-height: 1.15;
+    text-align: justify;
+    color: #000000;
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+    color: #1a365d;
+    margin-top: 18pt;
+    margin-bottom: 12pt;
+    page-break-before: always;
+}
+.title-page h1 {
+    page-break-before: avoid;
+}
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    font-weight: bold;
+    color: #2b6cb0;
+    margin-top: 14pt;
+    margin-bottom: 6pt;
+}
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #2d3748;
+    margin-top: 10pt;
+    margin-bottom: 4pt;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 6pt;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10pt;
+    margin-bottom: 14pt;
+    font-size: 11pt;
+}
+table, th, td {
+    border: 1px solid #4a5568;
+}
+th {
+    background-color: #edf2f7;
+    font-weight: bold;
+    text-align: left;
+    padding: 6pt 8pt;
+}
+td {
+    padding: 5pt 8pt;
+    vertical-align: top;
+}
+.code-block {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 9.5pt;
+    background-color: #f7fafc;
+    border: 1px solid #cbd5e0;
+    padding: 8pt;
+    margin-top: 6pt;
+    margin-bottom: 10pt;
+    white-space: pre-wrap;
+    word-break: break-all;
+    line-height: 1.1;
+}
+.page-break {
+    page-break-before: always;
+    mso-break-type: section-break;
+    clear: both;
+}
+.center {
+    text-align: center;
+}
+.caption {
+    font-size: 10.5pt;
+    font-style: italic;
+    text-align: center;
+    margin-top: 4pt;
+    margin-bottom: 12pt;
+}
+.sig-line {
+    border-top: 1px solid #000;
+    width: 220px;
+    display: inline-block;
+    margin-top: 40pt;
+}
+</style>
+</head>
+<body>
+
+<div class="title-page center">
+    <br><br>
+    <h1 style="font-size: 22pt; margin-bottom: 18pt;">BUS TRACKING AND MANAGEMENT APPLICATION</h1>
+    <p style="font-size: 13pt;"><strong>A Project Report Submitted to</strong></p>
+    <p style="font-size: 15pt; font-weight: bold; color: #1a365d;">SRM UNIVERSITY – AP, ANDHRA PRADESH</p>
+    <p style="font-size: 12pt; font-style: italic;">In partial fulfilment of the requirement for the award of the degree of</p>
+    <p style="font-size: 13pt; font-weight: bold;">Bachelor of Technology in Computer Science and Engineering</p>
+    <p style="font-size: 12pt;">School of Engineering and Sciences</p>
+    <br>
+    <p style="font-size: 12pt;"><strong>Course:</strong> CSE 202 – Object Oriented Programming with C++</p>
+    <p style="font-size: 12pt;"><strong>Academic Year:</strong> 2026 – 2027</p>
+    <p style="font-size: 12pt;"><strong>Date:</strong> 26/11/2026</p>
+    <br><br>
+    
+    <table style="width: 85%; margin: 0 auto; border: none;">
+        <tr style="border: none;">
+            <td style="border: none; width: 55%; vertical-align: top;">
+                <strong>Submitted by:</strong><br><br>
+                1. <strong>Selvasiva S</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(AP25122230011)<br>
+                2. <strong>Sarathi R</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(AP25122230040)<br>
+                3. <strong>D.S.Bharani</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(AP25110100027)
+            </td>
+            <td style="border: none; width: 45%; vertical-align: top;">
+                <strong>Under the Guidance of:</strong><br><br>
+                <strong>Ms. Pithani Ashwini</strong><br>
+                Assistant Professor / Faculty Mentor<br>
+                Dept. of Computer Science and Engineering<br>
+                SRM University – AP<br><br>
+                <strong>Vice Chancellor:</strong><br>
+                Prof. Ch. Satish Kumar
+            </td>
+        </tr>
+    </table>
+    
+    <br><br><br>
+    <p style="font-size: 12pt; font-weight: bold;">Department of Computer Science and Engineering</p>
+    <p style="font-size: 12pt;">SRM University – AP, Amaravati, Andhra Pradesh – 522240</p>
+</div>
+
+<div class="page-break"></div>
+
+<h1 class="center">CERTIFICATE</h1>
+<br>
+<p>This is to certify that the project report entitled <strong>“BUS TRACKING AND MANAGEMENT APPLICATION”</strong> is being submitted by <strong>Selvasiva S</strong> (<code>AP25122230011</code>), <strong>Sarathi R</strong> (<code>AP25122230040</code>), and <strong>D.S.Bharani</strong> (<code>AP25110100027</code>), students of the Department of Computer Science and Engineering, School of Engineering and Sciences, SRM University – AP, in partial fulfilment of the requirement for the degree of <strong>Bachelor of Technology in Computer Science and Engineering</strong>, carried out by them in the course <strong>CSE 202 – Object Oriented Programming with C++</strong> during the academic year <strong>2026–2027</strong>.</p>
+<p>This report reflects bonafide project work carried out under proper academic supervision and adheres to the academic standards prescribed by the University.</p>
+
+<br><br><br><br>
+<table style="width: 100%; border: none;">
+    <tr style="border: none;">
+        <td style="border: none; width: 50%; text-align: left;">
+            <div class="sig-line"></div><br>
+            <strong>Signature of the Supervisor / Mentor</strong><br>
+            <strong>Ms. Pithani Ashwini</strong><br>
+            Assistant Professor, Department of CSE<br>
+            SRM University – AP
+        </td>
+        <td style="border: none; width: 50%; text-align: right;">
+            <div class="sig-line"></div><br>
+            <strong>Signature of Head of the Department</strong><br>
+            Head, Department of CSE<br>
+            School of Engineering and Sciences<br>
+            SRM University – AP
+        </td>
+    </tr>
+</table>
+
+<div class="page-break"></div>
+
+<h1 class="center">DECLARATION</h1>
+<br>
+<p>We hereby declare that the project report entitled <strong>“BUS TRACKING AND MANAGEMENT APPLICATION”</strong> submitted to the Department of Computer Science and Engineering, School of Engineering and Sciences, SRM University – AP, is an authentic record of original work carried out by us under the supervision and guidance of <strong>Ms. Pithani Ashwini</strong>.</p>
+<p>The work presented here has not been submitted, in part or in full, for the award of any other degree, diploma, or fellowship in this or any other university or institute. All sources of information, code libraries, algorithms, and references that are not our own have been acknowledged in the References section.</p>
+
+<br><br>
+<p><strong>Team Members:</strong></p>
+<br>
+<table style="width: 100%; border: none;">
+    <tr style="border: none;">
+        <td style="border: none; width: 45%;"><strong>1. Selvasiva S</strong> (AP25122230011)</td>
+        <td style="border: none; width: 55%;">Signature: ________________________________</td>
+    </tr>
+    <tr style="border: none;">
+        <td style="border: none; width: 45%;"><strong>2. Sarathi R</strong> (AP25122230040)</td>
+        <td style="border: none; width: 55%;">Signature: ________________________________</td>
+    </tr>
+    <tr style="border: none;">
+        <td style="border: none; width: 45%;"><strong>3. D.S.Bharani</strong> (AP25110100027)</td>
+        <td style="border: none; width: 55%;">Signature: ________________________________</td>
+    </tr>
+</table>
+
+<br><br>
+<p><strong>Date:</strong> 26/11/2026<br>
+<strong>Place:</strong> Amaravati, Andhra Pradesh</p>
+
+<div class="page-break"></div>
+
+<h1 class="center">ACKNOWLEDGEMENTS</h1>
+<br>
+<p>We would like to express our profound gratitude to <strong>SRM University – AP</strong> for granting us the opportunity and infrastructure to undertake this software engineering project as part of the curriculum for <strong>CSE 202 – Object Oriented Programming with C++</strong>.</p>
+<p>We extend our heartfelt gratitude to the Honourable Vice Chancellor, <strong>Prof. Ch. Satish Kumar</strong>, for fostering an inspiring educational ecosystem that champions experiential, project-based engineering learning and technical innovation.</p>
+<p>We record our deep gratitude to the <strong>Dean, School of Engineering and Sciences</strong>, and the <strong>Head of the Department of Computer Science and Engineering</strong>, for their continued administrative encouragement, guidance, and academic leadership throughout this semester.</p>
+<p>We are immensely indebted to our esteemed Faculty Mentor, <strong>Ms. Pithani Ashwini</strong>, Assistant Professor, Department of Computer Science and Engineering, SRM University – AP, for her intellectual mentorship, rigorous feedback, constructive evaluations, and steadfast support during every stage of conceptualization, design, and software implementation.</p>
+<p>Finally, we express our thanks to our lab instructors, batchmates, and families whose constant motivation and moral support enabled us to bring this project to a successful conclusion.</p>
+
+<div class="page-break"></div>
+
+<h1 class="center">ABSTRACT</h1>
+<br>
+<p>Public transit systems and regional bus depots face severe operational friction when managing fleet schedules, tracking en-route assets, and resolving service irregularities such as "bus bunching"—where consecutive buses on the same route cluster together, creating service delays and passenger overcrowding. This project presents the <strong>Bus Tracking and Management Application</strong>, an enterprise depot management software engineered in modern C++ utilizing object-oriented programming (OOP) paradigms. The software addresses depot-level dispatching and monitoring through a unified, high-efficiency operational workflow.</p>
+<p>Office staff and depot administrators can register fleet buses (registration number, model, capacity) and allocate vehicles to daily routes with driver ID, conductor ID, and departure timings while enforcing schedule uniqueness and fleet availability. The system provides immediate visibility into all registered rolling stock and active route assignments. Crucially, the depot manager can enter or update sample real-time bus locations and execute the autonomous <strong>Same-Route Bus Proximity Engine</strong>. Utilizing the spherical Haversine distance algorithm, the engine performs pairwise spatial analysis across all co-routed buses. Whenever two or more buses on the same route approach within a critical threshold (e.g., &le; 0.75 km), the system triggers high-visibility alerts with actionable headway regulation advisories.</p>
+<p>Built on robust OOP principles—including abstract base classes, inheritance, runtime polymorphism via virtual functions, encapsulation, operator overloading, templates, custom exception hierarchies, and CSV file persistence—the application eliminates scheduling collisions and provides actionable situational awareness. Comprehensive testing validates fault-tolerant operation, accurate proximity detection, and rapid telemetry responsiveness.</p>
+<br>
+<p><strong>Keywords:</strong> C++; Object-Oriented Programming; Intelligent Transportation Systems; Bus Depot Management; Vehicle Tracking; Spatial Proximity Algorithm; Bus Bunching Detection.</p>
+
+<div class="page-break"></div>
+
+<h1 class="center">TABLE OF CONTENTS</h1>
+<br>
+<p><strong>Certificate</strong></p>
+<p><strong>Declaration</strong></p>
+<p><strong>Acknowledgements</strong></p>
+<p><strong>Abstract</strong></p>
+<p><strong>List of Figures</strong></p>
+<p><strong>List of Tables</strong></p>
+<p><strong>1. Introduction</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1 Background and Motivation<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2 Problem Statement<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.3 Objectives<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.4 Scope of the Project<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.5 Organisation of the Report</p>
+<p><strong>2. Literature Survey and Existing Systems</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1 Overview of Fleet Management Systems<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2 Comparison of Existing Solutions</p>
+<p><strong>3. Requirement Analysis</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1 Functional Requirements<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.2 Non-Functional Requirements<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.3 Hardware and Software Environment<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.4 Assumptions and Constraints</p>
+<p><strong>4. System Design</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;4.1 Overall System Architecture<br>
+&nbsp;&nbsp;&nbsp;&nbsp;4.2 System Workflow and Flowcharts<br>
+&nbsp;&nbsp;&nbsp;&nbsp;4.3 Algorithms and Mathematical Formulations<br>
+&nbsp;&nbsp;&nbsp;&nbsp;4.4 Data Structures Used<br>
+&nbsp;&nbsp;&nbsp;&nbsp;4.5 Data Storage and File Formats</p>
+<p><strong>5. Object-Oriented Design</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;5.1 Identification of Classes and Objects<br>
+&nbsp;&nbsp;&nbsp;&nbsp;5.2 UML Class Diagram<br>
+&nbsp;&nbsp;&nbsp;&nbsp;5.3 Class Descriptions and Responsibilities<br>
+&nbsp;&nbsp;&nbsp;&nbsp;5.4 Class Relationships<br>
+&nbsp;&nbsp;&nbsp;&nbsp;5.5 Object Interaction and Sequence Diagram</p>
+<p><strong>6. Implementation</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;6.1 Mapping of OOP Concepts to Code<br>
+&nbsp;&nbsp;&nbsp;&nbsp;6.2 Advanced C++ Language &amp; STL Features Used<br>
+&nbsp;&nbsp;&nbsp;&nbsp;6.3 Key Code Snippets and Explanations<br>
+&nbsp;&nbsp;&nbsp;&nbsp;6.4 Build and Run Instructions</p>
+<p><strong>7. Results and Discussion</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;7.1 System Execution and User Interface Outputs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;7.2 Discussion and Interpretation of Results<br>
+&nbsp;&nbsp;&nbsp;&nbsp;7.3 System Limitations</p>
+<p><strong>8. Conclusion and Future Scope</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;8.1 Conclusion<br>
+&nbsp;&nbsp;&nbsp;&nbsp;8.2 Future Scope</p>
+<p><strong>9. Team Contribution and Work Plan</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;9.1 Individual Contributions</p>
+<p><strong>References</strong></p>
+<p><strong>Appendices</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Appendix A: Complete Source Code (<code>main.cpp</code>)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Appendix B: Core Algorithms in Pseudocode<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Appendix C: System User Manual</p>
+
+<div class="page-break"></div>
+
+<h1>CHAPTER 1: INTRODUCTION</h1>
+
+<h2>1.1 Background and Motivation</h2>
+<p>Public bus transportation systems constitute the backbone of urban and regional mobility. Bus depots operate as the operational nerve centers responsible for maintaining fleet assets, dispatching daily schedules, assigning operating crews (drivers and conductors), and ensuring en-route safety. Historically, depot administration has relied on manual paper registers, physical logbooks, or disjointed spreadsheets. Under such manual systems, route assignments are prone to scheduling errors, driver misallocations, and complete lack of real-time visibility once buses leave the depot gate.</p>
+<p>A critical operational hazard in transit operations is <strong>bus bunching</strong> (also known as bus clumping or platooning). Bus bunching occurs when two or more transit vehicles running on the same route lose their planned headway interval. If a leading bus experiences minor passenger boarding delays or traffic congestion, trailing buses catch up because they encounter fewer waiting passengers. Consequently, multiple buses arrive simultaneously at stops, creating long gaps in service beforehand, severe passenger overcrowding, uneven crew workloads, and fuel inefficiencies.</p>
+<p>To address these challenges, modern Intelligent Transportation Systems (ITS) require specialized depot-level software. C++ is the industry standard for performance-critical systems, providing deterministic memory management, zero-cost abstractions, object-oriented design, and rapid mathematical execution. By modeling physical fleet assets—such as buses, waypoints, routes, drivers, and supervisory alerts—as encapsulated C++ classes, the <strong>Bus Tracking and Management Application</strong> provides an integrated, robust, and extensible solution for depot managers and administrative staff.</p>
+
+<h2>1.2 Problem Statement</h2>
+<p>Regional bus depot administrations lack an integrated, lightweight digital platform to coordinate daily schedule allocations and track active fleet movements along designated transit routes. Manual recording often produces conflicting assignments of drivers, conductors, and vehicles, while supervisors have no automated mechanism to detect when vehicles on the same corridor converge dangerously close to each other.</p>
+<p>The goal of this project is to design, model, and implement an Object-Oriented C++ application that allows office staff to assign daily route schedules (pairing bus registration numbers with routes, timings, drivers, and conductors), provides the depot manager with live tracking telemetry and crew records, and autonomously executes a spatial proximity algorithm to trigger real-time hazard alerts when buses on the same route operate within a critical proximity threshold.</p>
+
+<h2>1.3 Objectives</h2>
+<p>The primary objectives of this project are:</p>
+<ol>
+    <li><strong>Functional Objective:</strong> To develop an integrated depot management application supporting bus registration, daily route assignment, fleet display, telemetry location updating, and same-route bus proximity checking.</li>
+    <li><strong>Object-Oriented Design Objective:</strong> To design a clean class hierarchy utilizing core OOP tenets: abstract base classes (<code>Vehicle</code>), inheritance (<code>Bus</code>), runtime polymorphism via virtual functions, encapsulation, operator overloading, and generic templates.</li>
+    <li><strong>Algorithmic Objective:</strong> To implement a real-time spatial proximity detection engine based on the spherical Haversine formula to identify vehicle bunching (&le; 0.75 km threshold) and broadcast immediate operational advisories.</li>
+    <li><strong>Reliability &amp; Quality Objective:</strong> To guarantee system stability through robust input validation and custom exception handling (<code>TransitException</code>, <code>DuplicateBusException</code>, <code>DuplicateAllocationException</code>, <code>RouteNotFoundException</code>, <code>BusNotFoundException</code>).</li>
+    <li><strong>Persistence Objective:</strong> To implement structured file I/O operations for exporting daily operational schedules into standard comma-separated values (CSV) format.</li>
+</ol>
+
+<h2>1.4 Scope of the Project</h2>
+<p><strong>In Scope:</strong></p>
+<ul>
+    <li>Interactive command-line interface featuring: 1. Register a bus, 2. Assign bus to a route, 3. Display registered buses, 4. Display route assignments, 5. Enter/update sample bus location, 6. Check same-route bus proximity, and 0. Exit.</li>
+    <li>Dynamic daily route allocation associating vehicle registration numbers with routes, departure schedules, driver IDs, and conductor IDs.</li>
+    <li>Master route catalog management with intermediate waypoints, distance indices, and geographical coordinates.</li>
+    <li>Real-time fleet tracking displaying active vehicle positions, current stops, crew identities, and operational status.</li>
+    <li>Pairwise spatial proximity calculation on co-routed buses to detect bunching and generate alerts.</li>
+    <li>Telemetry location updating to simulate real-time bus movements.</li>
+    <li>Robust exception handling and persistent export to CSV files.</li>
+</ul>
+<p><strong>Out of Scope:</strong></p>
+<ul>
+    <li>Physical hardware interfacing with in-vehicle OBD-II or GSM/cellular GPS modules (positions are modeled via telemetry feeds).</li>
+    <li>Dynamic passenger ticketing, fare collection, and passenger-facing mobile applications.</li>
+    <li>Relational SQL database servers (file handling and in-memory STL associative containers provide persistence).</li>
+</ul>
+
+<h2>1.5 Organisation of the Report</h2>
+<p>Chapter 2 reviews existing transit management systems; Chapter 3 specifies requirements; Chapter 4 details system architecture, flowcharts, data structures, and the Haversine distance algorithm; Chapter 5 presents the complete Object-Oriented design and UML diagrams; Chapter 6 covers implementation with OOP mapping, C++17 features, and key code snippets; Chapter 7 demonstrates results, console screens, and test scenarios; Chapter 8 provides conclusions and future scope; Chapter 9 outlines individual team contributions, followed by References and Appendices.</p>
+
+<div class="page-break"></div>
+
+<h1>CHAPTER 2: LITERATURE SURVEY AND EXISTING SYSTEMS</h1>
+
+<h2>2.1 Overview of Fleet Management Systems</h2>
+<p>Intelligent Transportation Systems (ITS) have evolved from static dispatch boards to automated vehicle location (AVL) systems. Modern fleet monitoring frameworks rely on spatial calculations to maintain scheduled headways. Literature on transit operations emphasizes that headway regularity is vastly more critical to passenger satisfaction than raw vehicle speed. When headways deteriorate, transit systems experience passenger accumulation cascades, leading to severe vehicle bunching.</p>
+
+<h2>2.2 Comparison of Existing Solutions</h2>
+<p class="caption">Table 1: Comparison of existing systems</p>
+<table>
+    <tr>
+        <th>Sr.</th>
+        <th>System / Source</th>
+        <th>Key Features</th>
+        <th>Limitations</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td><strong>Manual Depot Logbooks</strong> [1]</td>
+        <td>No hardware or software overhead; simple paper-based recording of bus departures.</td>
+        <td>High incidence of human error; zero live visibility; unable to detect route conflicts or bus bunching.</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td><strong>Commercial GPS Web Portals</strong> [2]</td>
+        <td>Raw latitude/longitude plotting; geofencing perimeter alerts; speed tracking.</td>
+        <td>High recurring subscription costs; lack of integrated crew-to-schedule pairing; no automated route-aware bunching alerts.</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td><strong>Enterprise Transit Suites</strong> [3]</td>
+        <td>Automated scheduling; predictive dispatch; multi-modal passenger information systems.</td>
+        <td>Prohibitive capital expenditure; steep learning curve; complex hardware dependencies unsuitable for lightweight depot operations.</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td><strong>Proposed Bus Tracking Application</strong></td>
+        <td>Unified depot console; automated schedule conflict validation; Haversine proximity engine; zero external dependencies; modern C++17 design.</td>
+        <td>Relies on simulated telemetry feeds rather than integrated physical satellite modems.</td>
+    </tr>
+</table>
+
+<div class="page-break"></div>
+
+<h1>CHAPTER 3: REQUIREMENT ANALYSIS</h1>
+
+<h2>3.1 Functional Requirements</h2>
+<ul>
+    <li><strong>FR-1: Bus Registration:</strong> Capture vehicle registration, model, and seating capacity.</li>
+    <li><strong>FR-2: Route Assignment:</strong> Assign registered buses to routes with departure times, driver IDs, and conductor IDs.</li>
+    <li><strong>FR-3: Fleet Display:</strong> Show all registered buses and their active telemetry locations.</li>
+    <li><strong>FR-4: Route Assignments Display:</strong> Display comprehensive tables of active route assignments.</li>
+    <li><strong>FR-5: Location Updates:</strong> Enable entry or update of bus telemetry coordinates and stops.</li>
+    <li><strong>FR-6: Proximity &amp; Bunching Alerts:</strong> Calculate pairwise distances between buses on the same route; trigger alerts if distance &le; 0.75 km.</li>
+    <li><strong>FR-7: Conflict Prevention:</strong> Prevent duplicate registration and double-allocation of vehicles.</li>
+    <li><strong>FR-8: Data Persistence:</strong> Export route assignments to CSV on system exit.</li>
+</ul>
+
+<h2>3.2 Hardware and Software Requirements</h2>
+<p class="caption">Table 3: Development and run-time environment</p>
+<table>
+    <tr>
+        <th>Item</th>
+        <th>Details</th>
+    </tr>
+    <tr>
+        <td>Operating system</td>
+        <td>Microsoft Windows 11 (64-bit) / Linux Ubuntu 22.04 LTS</td>
+    </tr>
+    <tr>
+        <td>Compiler and version</td>
+        <td>GCC / g++ 13.2+ / MSVC v19.x (supporting C++17)</td>
+    </tr>
+    <tr>
+        <td>C++ standard</td>
+        <td>C++17 (-std=c++17)</td>
+    </tr>
+    <tr>
+        <td>IDE / editor</td>
+        <td>Visual Studio Code / CLion / Visual Studio 2022</td>
+    </tr>
+    <tr>
+        <td>Build tool</td>
+        <td>Direct g++ invocation / GNU Make / CMake 3.20+</td>
+    </tr>
+    <tr>
+        <td>Libraries used</td>
+        <td>Standard Template Library (vector, map, memory, cmath, fstream, iomanip, string)</td>
+    </tr>
+    <tr>
+        <td>Version control</td>
+        <td>Git + GitHub</td>
+    </tr>
+    <tr>
+        <td>Hardware</td>
+        <td>Intel Core i5/i7 or AMD Ryzen 5, 8 GB RAM, 256 GB SSD</td>
+    </tr>
+</table>
+
+<div class="page-break"></div>
+
+<h1>CHAPTER 4: SYSTEM DESIGN</h1>
+
+<h2>4.1 Overall Architecture</h2>
+<p>The system architecture integrates five functional components:</p>
+<ol>
+    <li><strong>Command Interface Tier:</strong> Unified numbered console menu providing direct access to all depot operations.</li>
+    <li><strong>Fleet &amp; Schedule Manager:</strong> Controls vehicle inventory, route assignment validation, and crew pairing.</li>
+    <li><strong>Spatial Telemetry Subsystem:</strong> Maintains geographic coordinates and stop progression indices.</li>
+    <li><strong>Haversine Proximity Engine:</strong> Computes great-circle distances between vehicles sharing the same route.</li>
+    <li><strong>Persistence Tier:</strong> Serializes records to <code>route_assignments_report.csv</code>.</li>
+</ol>
+
+<div class="code-block">
++-----------------------------------------------------------------------------------+
+|                        BUS TRACKING AND MANAGEMENT CONSOLE                        |
+|   1. Register Bus   2. Assign Route   3. Display Fleet   4. Display Assignments   |
+|   5. Update Telemetry Location        6. Check Proximity Alert        0. Exit     |
++-----------------------------------------+-----------------------------------------+
+                                          |
+                                          v
++-----------------------------------------------------------------------------------+
+|                           BUS DEPOT CONTROLLER (Façade)                           |
+|   - Master Bus Registry (std::map)          - Master Routes Catalog (std::map)    |
+|   - Schedule Assignments (std::vector)      - Exception Validation Engine         |
++-----------------------------------------+-----------------------------------------+
+                                          |
+                                          v
++-----------------------------------------------------------------------------------+
+|                         HAVERSINE PROXIMITY ALERT ENGINE                          |
+|   - Route-Based Vehicle Bucketing           - Pairwise Distance Calculation       |
+|   - Spatial Threshold Comparator (0.75 km)  - Real-Time Hazard Alert Dispatcher   |
++-----------------------------------------+-----------------------------------------+
+                                          |
+                                          v
++-----------------------------------------------------------------------------------+
+|                               DATA PERSISTENCE LAYER                              |
+|               Export to route_assignments_report.csv on Shutdown                  |
++-----------------------------------------------------------------------------------+
+</div>
+<p class="caption">Figure 1: Block diagram of the system architecture</p>
+
+<h2>4.2 Flowchart and System Workflow</h2>
+<div class="code-block">
+                      [ Launch Application ]
+                                |
+                                v
+               [ Initialize Master Routes & Fleet ]
+                                |
+                                v
+           +-----> [ Display Main Menu (0-6) ] <-----+
+           |                    |                    |
+           |    +---------------+---------------+    |
+           |    |   |   |   |   |   |   |       |    |
+           |   (1) (2) (3) (4) (5) (6) (0)    (Err)  |
+           |    |   |   |   |   |   |   |       |    |
+           |    v   |   |   |   |   |   |       v    |
+           |  Register Bus  |   |   |   |  Invalid Input
+           |        v   |   |   |   |       |    |
+           |      Assign to Route   |   |   |       +----+
+           |            v   |   |   |   |            |
+           |          Display Buses |   |            |
+           |                v   |   |   |            |
+           |              Display Assignments        |
+           |                    v   |   |            |
+           |                  Update Bus Location    |
+           |                        v   |            |
+           |                      Check Proximity    |
+           |                            v            |
+           |                    Export CSV & Exit    |
+           |                            |            |
+           +----------------------------+            |
+                                                     v
+                                              [ Terminate ]
+</div>
+<p class="caption">Figure 2: Flowchart of the system</p>
+
+<h2>4.3 Algorithms Used</h2>
+
+<h3>Algorithm 1: Haversine Great-Circle Spatial Distance Metric</h3>
+<p>Calculates spherical distance between coordinates (&phi;<sub>1</sub>, &lambda;<sub>1</sub>) and (&phi;<sub>2</sub>, &lambda;<sub>2</sub>):</p>
+<ol>
+    <li>&Delta;&phi; = (&phi;<sub>2</sub> - &phi;<sub>1</sub>) &times; &pi;/180, &Delta;&lambda; = (&lambda;<sub>2</sub> - &lambda;<sub>1</sub>) &times; &pi;/180</li>
+    <li><i>a</i> = sin<sup>2</sup>(&Delta;&phi;/2) + cos(&phi;<sub>1</sub>&times;&pi;/180) &times; cos(&phi;<sub>2</sub>&times;&pi;/180) &times; sin<sup>2</sup>(&Delta;&lambda;/2)</li>
+    <li><i>c</i> = 2 &times; atan2(&radic;<i>a</i>, &radic;(1 - <i>a</i>))</li>
+    <li><i>d</i> = <i>R</i> &times; <i>c</i>, where <i>R</i> = 6371.0 km.</li>
+</ol>
+<p><strong>Complexity:</strong> Time: <i>O(1)</i>, Space: <i>O(1)</i>.</p>
+
+<h3>Algorithm 2: Same-Route Bus Proximity &amp; Bunching Detection</h3>
+<ol>
+    <li>Group all active bus assignments by their <code>routeId</code> into an associative map: <code>routeId &rarr; vector&lt;busReg&gt;</code>.</li>
+    <li>For each route containing 2 or more buses:</li>
+    <li>Iterate through all unique pairs (<i>i</i>, <i>j</i>) where <i>i &lt; j</i>.</li>
+    <li>Compute ground distance: <i>dist</i> = <code>b1.getCurrentLocation().distanceTo(b2.getCurrentLocation())</code>.</li>
+    <li>If <i>dist &le; 0.75 km</i>: trigger <strong>CRITICAL PROXIMITY CONFLICT ALERT</strong> with corrective speed advisory.</li>
+</ol>
+<p><strong>Complexity:</strong> Time: <i>O(K &times; N<sub>r</sub><sup>2</sup>)</i>, Space: <i>O(N)</i>.</p>
+
+<h2>4.4 Data Structures Used</h2>
+<p class="caption">Table 5: Data structures and their purpose</p>
+<table>
+    <tr>
+        <th>Data structure</th>
+        <th>Where used</th>
+        <th>Why chosen</th>
+        <th>Complexity of key operations</th>
+    </tr>
+    <tr>
+        <td><code>std::map&lt;std::string, Bus&gt;</code></td>
+        <td>Fleet Directory</td>
+        <td>Fast ordered lookup by bus registration number.</td>
+        <td>Lookup: <i>O(log N)</i>, Insert: <i>O(log N)</i></td>
+    </tr>
+    <tr>
+        <td><code>std::map&lt;int, Route&gt;</code></td>
+        <td>Route Master</td>
+        <td>Direct indexing by unique integer Route ID.</td>
+        <td>Lookup: <i>O(log M)</i>, Insert: <i>O(log M)</i></td>
+    </tr>
+    <tr>
+        <td><code>std::vector&lt;Stop&gt;</code></td>
+        <td>Inside <code>Route</code></td>
+        <td>Preserves strictly ordered sequence of checkpoints.</td>
+        <td>Access: <i>O(1)</i>, Append: <i>O(1)</i></td>
+    </tr>
+    <tr>
+        <td><code>std::vector&lt;RouteAssignment&gt;</code></td>
+        <td>Daily Schedules</td>
+        <td>Dynamic array storing all daily allocations.</td>
+        <td>Iteration: <i>O(N)</i>, Append: <i>O(1)</i></td>
+    </tr>
+</table>
+
+<div class="page-break"></div>
+
+<h1>CHAPTER 5: OBJECT-ORIENTED DESIGN</h1>
+
+<h2>5.1 Identifying Classes and Objects</h2>
+<p>The system is decomposed into distinct object-oriented classes:</p>
+<ul>
+    <li><code>Vehicle</code> (Abstract Base Class modeling generic transit vehicles)</li>
+    <li><code>Bus</code> (Derived concrete class representing physical fleet buses with telemetry)</li>
+    <li><code>GeoLocation</code> (Coordinate struct with spherical Haversine computation)</li>
+    <li><code>Stop</code> (Waypoints along transit corridors)</li>
+    <li><code>Route</code> (Ordered sequence of stops and total corridor distance)</li>
+    <li><code>RouteAssignment</code> (Schedule binding of bus, route, crew, and departure timing)</li>
+    <li><code>BusDepotApplication</code> (Façade controller managing application logic)</li>
+</ul>
+
+<h2>5.2 UML Class Diagram</h2>
+<div class="code-block">
++--------------------------------------------------------------------------+
+|                               Vehicle                                    |
+|--------------------------------------------------------------------------|
+| # registrationNumber: string                                             |
+| # model: string                                                          |
+| # capacity: int                                                          |
+| # active: bool                                                           |
+|--------------------------------------------------------------------------|
+| + virtual displayDetails() const = 0 : void                              |
+| + virtual ~Vehicle() = default                                           |
++--------------------------------------------------------------------------+
+                                     ^
+                                     | (Inheritance)
++------------------------------------+-------------------------------------+
+|                                 Bus                                      |
+|--------------------------------------------------------------------------|
+| - currentLocation: GeoLocation                                           |
+| - lastUpdatedStop: string                                                |
+| - static totalBusesRegistered: int                                       |
+|--------------------------------------------------------------------------|
+| + displayDetails() const override : void                                 |
+| + setLocation(GeoLocation, string) : void                                |
+| + operator&lt;&lt;(ostream, Bus) : friend ostream&amp;                             |
++--------------------------------------------------------------------------+
+
++--------------------+      +--------------------+      +--------------------+
+|    GeoLocation     |      |        Stop        |      |       Route        |
+|--------------------|      |--------------------|      |--------------------|
+| + latitude: double |      | - stopId: int      |      | - routeId: int     |
+| + longitude: double|      | - stopName: string |      | - stops: vector    |
+|--------------------|      | - location: GeoLoc |      |--------------------|
+| + distanceTo(): dbl|      | - distFromStart:dbl|      | + addStop()        |
++--------------------+      +--------------------+      +--------------------+
+          ^                           ^                           ^
+          |                           | (Composition)             |
+          +---------------------------+---------------------------+
+                                      |
++-------------------------------------+------------------------------------+
+|                         BusDepotApplication                              |
+|--------------------------------------------------------------------------|
+| - registeredBuses: map&lt;string, Bus&gt;                                      |
+| - routes: map&lt;int, Route&gt;                                                |
+| - assignments: vector&lt;RouteAssignment&gt;                                   |
+| - proximityThresholdKm: double                                           |
+| - static proximityAlertEvents: int                                       |
+|--------------------------------------------------------------------------|
+| + registerBus(reg, model, cap) : void                                    |
+| + assignBusToRoute(...) : void                                           |
+| + displayRegisteredBuses() const : void                                  |
+| + displayRouteAssignments() const : void                                 |
+| + updateBusLocation(reg, stop, lat, lon) : void                          |
+| + checkSameRouteProximity() : void                                       |
+| + exportToCSV(filename) const : void                                     |
++--------------------------------------------------------------------------+
+</div>
+<p class="caption">Figure 3: UML class diagram</p>
+
+<h2>5.3 Class Description</h2>
+<p class="caption">Table 6: Summary of classes</p>
+<table>
+    <tr>
+        <th>Class</th>
+        <th>Responsibility</th>
+        <th>Key data members</th>
+        <th>Key member functions</th>
+    </tr>
+    <tr>
+        <td><code>Vehicle</code></td>
+        <td>Abstract base class establishing polymorphic vehicle contract.</td>
+        <td><code>protected: registrationNumber, model, capacity, active</code></td>
+        <td><code>virtual displayDetails() = 0</code>, <code>virtual ~Vehicle()</code></td>
+    </tr>
+    <tr>
+        <td><code>Bus</code></td>
+        <td>Derived concrete class encapsulating telemetry, stops, and status.</td>
+        <td><code>private: currentLocation, lastUpdatedStop</code></td>
+        <td><code>displayDetails() override</code>, <code>setLocation()</code>, <code>operator&lt;&lt;</code></td>
+    </tr>
+    <tr>
+        <td><code>GeoLocation</code></td>
+        <td>Encapsulates coordinates and computes spherical distances.</td>
+        <td><code>public: latitude, longitude</code></td>
+        <td><code>distanceTo(GeoLocation) double</code></td>
+    </tr>
+    <tr>
+        <td><code>Stop</code></td>
+        <td>Represents physical passenger stops along routes.</td>
+        <td><code>private: stopId, stopName, location, distanceFromStartKm</code></td>
+        <td><code>getStopName()</code>, <code>getLocation()</code>, <code>getDistance()</code></td>
+    </tr>
+    <tr>
+        <td><code>Route</code></td>
+        <td>Encapsulates ordered sequence of stops and total distance.</td>
+        <td><code>private: routeId, source, destination, stops</code></td>
+        <td><code>addStop()</code>, <code>getStops()</code></td>
+    </tr>
+    <tr>
+        <td><code>RouteAssignment</code></td>
+        <td>Pairs a bus with a route, driver, conductor, and departure time.</td>
+        <td><code>private: assignmentId, busRegNumber, routeId, driverId, conductorId</code></td>
+        <td><code>getAssignmentId()</code>, <code>isActive()</code></td>
+    </tr>
+    <tr>
+        <td><code>BusDepotApplication</code></td>
+        <td>Master façade managing fleets, schedules, telemetry, and alerts.</td>
+        <td><code>private: registeredBuses, routes, assignments</code></td>
+        <td><code>registerBus()</code>, <code>assignBusToRoute()</code>, <code>checkSameRouteProximity()</code></td>
+    </tr>
+</table>
+
+<h2>5.4 Relationships Between Classes</h2>
+<p class="caption">Table 7: Class relationships</p>
+<table>
+    <tr>
+        <th>From</th>
+        <th>To</th>
+        <th>Relationship</th>
+        <th>Justification</th>
+    </tr>
+    <tr>
+        <td><code>Bus</code></td>
+        <td><code>Vehicle</code></td>
+        <td>Inheritance (is-a)</td>
+        <td>A Bus is a specific kind of transit Vehicle inheriting core identity attributes.</td>
+    </tr>
+    <tr>
+        <td><code>Route</code></td>
+        <td><code>Stop</code></td>
+        <td>Composition (has-a)</td>
+        <td>A route strictly owns its ordered stops.</td>
+    </tr>
+    <tr>
+        <td><code>Stop</code></td>
+        <td><code>GeoLocation</code></td>
+        <td>Composition (has-a)</td>
+        <td>Each stop has dedicated coordinate values.</td>
+    </tr>
+    <tr>
+        <td><code>Bus</code></td>
+        <td><code>GeoLocation</code></td>
+        <td>Composition (has-a)</td>
+        <td>Each bus encapsulates its live telemetry coordinates.</td>
+    </tr>
+    <tr>
+        <td><code>BusDepotApplication</code></td>
+        <td><code>Bus</code></td>
+        <td>Aggregation</td>
+        <td>Depot manages buses, but buses exist independently.</td>
+    </tr>
+    <tr>
+        <td><code>BusDepotApplication</code></td>
+        <td><code>RouteAssignment</code></td>
+        <td>Association / Composition</td>
+        <td>Central system creates and manages schedule allocations.</td>
+    </tr>
+</table>
+
+<div class="page-break"></div>
+
+<h1>CHAPTER 6: IMPLEMENTATION</h1>
+
+<h2>6.1 Mapping of OOP Concepts to the Code</h2>
+<p class="caption">Table 9: OOP concepts and where they are used</p>
+<table>
+    <tr>
+        <th>OOP concept</th>
+        <th>Class / file where used</th>
+        <th>How it is used and why</th>
+    </tr>
+    <tr>
+        <td>Classes and objects</td>
+        <td><code>Bus</code>, <code>Route</code>, <code>Stop</code>, <code>RouteAssignment</code></td>
+        <td>Encapsulates physical fleet entities, timetables, and waypoints.</td>
+    </tr>
+    <tr>
+        <td>Encapsulation / data hiding</td>
+        <td>All classes</td>
+        <td>State variables are private; access is controlled via public getters/setters.</td>
+    </tr>
+    <tr>
+        <td>Abstraction</td>
+        <td><code>Vehicle</code> class</td>
+        <td>Abstract base class with pure virtual function <code>virtual void displayDetails() const = 0</code>.</td>
+    </tr>
+    <tr>
+        <td>Inheritance</td>
+        <td><code>Bus</code> : public <code>Vehicle</code></td>
+        <td>Derived concrete class inherits registration, model, and capacity attributes.</td>
+    </tr>
+    <tr>
+        <td>Compile-time polymorphism</td>
+        <td><code>Bus</code> class (<code>operator&lt;&lt;</code>)</td>
+        <td>Stream insertion operator overloading for formatted bus output.</td>
+    </tr>
+    <tr>
+        <td>Run-time polymorphism</td>
+        <td><code>Vehicle</code> virtual destructor and virtual methods</td>
+        <td>Enables dynamic polymorphic dispatch through base class pointers.</td>
+    </tr>
+    <tr>
+        <td>Constructors &amp; Destructors</td>
+        <td>All classes</td>
+        <td>Default/parameterized constructors initialize state; <code>virtual ~Vehicle() = default</code> ensures safe deletion.</td>
+    </tr>
+    <tr>
+        <td>Static members</td>
+        <td><code>Bus</code>, <code>RouteAssignment</code>, <code>BusDepotApplication</code></td>
+        <td><code>totalBusesRegistered</code>, <code>totalAssignments</code>, and <code>proximityAlertEvents</code> track global totals.</td>
+    </tr>
+    <tr>
+        <td>Friend functions</td>
+        <td><code>printAssignmentRow</code>, <code>operator&lt;&lt;</code></td>
+        <td>Allows non-member formatting functions direct access to private fields.</td>
+    </tr>
+    <tr>
+        <td>Templates</td>
+        <td><code>printHeader&lt;T&gt;</code></td>
+        <td>Generic templated header banner printer.</td>
+    </tr>
+</table>
+
+<h2>6.2 Other C++ Features Used</h2>
+<p class="caption">Table 10: C++ language and library features</p>
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Used?</th>
+        <th>Where and why</th>
+    </tr>
+    <tr>
+        <td>STL containers</td>
+        <td>Yes</td>
+        <td><code>std::vector</code> for stops and assignments; <code>std::map</code> for O(log N) lookup of buses and routes.</td>
+    </tr>
+    <tr>
+        <td>STL algorithms &amp; iterators</td>
+        <td>Yes</td>
+        <td>Range-based loops, structured bindings (<code>auto [k, v]</code>), <code>std::find_if</code>.</td>
+    </tr>
+    <tr>
+        <td>Exception handling</td>
+        <td>Yes</td>
+        <td>Custom exceptions (<code>TransitException</code>, <code>DuplicateBusException</code>, etc.) via <code>try/catch/throw</code>.</td>
+    </tr>
+    <tr>
+        <td>File handling (fstream)</td>
+        <td>Yes</td>
+        <td><code>std::ofstream</code> exports assignments to CSV file on program exit.</td>
+    </tr>
+    <tr>
+        <td>Namespaces</td>
+        <td>Yes</td>
+        <td><code>namespace TransitCore</code> wraps domain logic to prevent global name collisions.</td>
+    </tr>
+</table>
+
+<h2>6.3 Key Code Snippets</h2>
+<p><strong>Abstract Base Class Vehicle:</strong></p>
+<div class="code-block">
+class Vehicle {
+protected:
+    std::string registrationNumber;
+    std::string model;
+    int capacity;
+    bool active;
+public:
+    Vehicle(const std::string& reg, const std::string& mdl, int cap)
+        : registrationNumber(reg), model(mdl), capacity(cap), active(true) {}
+    virtual ~Vehicle() = default;
+    virtual void displayDetails() const = 0; // Pure virtual function
+};
+</div>
+
+<p><strong>Haversine Proximity Bunching Check:</strong></p>
+<div class="code-block">
+double distance = b1.getCurrentLocation().distanceTo(b2.getCurrentLocation());
+if (distance <= proximityThresholdKm) {
+    proximityAlertEvents++;
+    std::cout << "[!] ALERT: SAME-ROUTE BUS PROXIMITY CONFLICT DETECTED (ROUTE " << routeId << ")!\n";
+    std::cout << "    Vehicle 1: " << b1.getRegistrationNumber() 
+              << " | Vehicle 2: " << b2.getRegistrationNumber() << "\n";
+    std::cout << "    Separation: " << distance << " km (Threshold: " << proximityThresholdKm << " km)\n";
+}
+</div>
+
+<h2>6.4 Build and Run Instructions</h2>
+<p>The project can be compiled and executed using standard GCC or Clang:</p>
+<div class="code-block">
+g++ -std=c++17 -Wall -Wextra -O2 main.cpp -o bus_tracking_app.exe
+.\bus_tracking_app.exe
+</div>
+
+<div class="page-break"></div>
+
+<h1>CHAPTER 7: RESULTS AND DISCUSSION</h1>
+
+<h2>7.1 System Execution and User Interface Outputs</h2>
+
+<p><strong>Screen 1: Main Menu &amp; Registering a Bus (Matching System Execution)</strong></p>
+<div class="code-block">
+===== BUS TRACKING AND MANAGEMENT =====
+1. Register a bus
+2. Assign bus to a route
+3. Display registered buses
+4. Display route assignments
+5. Enter/update sample bus location
+6. Check same-route bus proximity
+0. Exit
+Enter your choice: 1
+Enter bus registration number: AP16-TJ-1004
+Enter bus model: Volvo B11R
+Enter seating capacity (default 50): 52
+
+[SUCCESS] Bus AP16-TJ-1004 (Volvo B11R, Capacity: 52) registered successfully!
+</div>
+<p class="caption">Figure 5: Main console menu and Option 1: Register a bus</p>
+
+<p><strong>Screen 2: Assign Bus to a Route (Option 2)</strong></p>
+<div class="code-block">
+===== BUS TRACKING AND MANAGEMENT =====
+1. Register a bus
+2. Assign bus to a route
+3. Display registered buses
+4. Display route assignments
+5. Enter/update sample bus location
+6. Check same-route bus proximity
+0. Exit
+Enter your choice: 2
+Enter bus registration number: AP16-TJ-1004
+Enter route ID (e.g., 101 for Vijayawada, 202 for Guntur): 101
+Enter driver ID: DRV-804
+Enter conductor ID: CND-404
+Enter departure time (e.g. 08:30 AM): 08:15 AM
+Enter date (e.g. 2026-11-26): 2026-11-26
+
+[SUCCESS] Bus AP16-TJ-1004 successfully assigned to Route 101 (SRM AP Amaravati -> Vijayawada PNBS) at 08:15 AM
+</div>
+<p class="caption">Figure 6: Option 2: Assigning bus to Route 101</p>
+
+<p><strong>Screen 3: Display Registered Buses &amp; Route Assignments (Options 3 &amp; 4)</strong></p>
+<div class="code-block">
+========================================================================================================
+                                  ACTIVE DAILY ROUTE ASSIGNMENTS
+========================================================================================================
+Asgn ID   Bus Reg        Route   Corridor                    Driver ID   Conductor   Dep. Time   Current Location         
+--------------------------------------------------------------------------------------------------------
+ASGN-1    AP16-TJ-1001   101     SRM AP -> Vijayawada PNBS   DRV-801     CND-401     07:30 AM    Mangalagiri Bypass       
+ASGN-2    AP16-TJ-1002   101     SRM AP -> Vijayawada PNBS   DRV-802     CND-402     07:45 AM    Mangalagiri Toll Plaza   
+ASGN-3    AP16-TJ-1003   202     SRM AP -> Guntur RTC Stand  DRV-803     CND-403     08:00 AM    Pedakakani Cross         
+ASGN-4    AP16-TJ-1004   101     SRM AP -> Vijayawada PNBS   DRV-804     CND-404     08:15 AM    SRM AP Campus Main Gate  
+========================================================================================================
+Total Active Daily Assignments: 4
+</div>
+<p class="caption">Figure 7: Option 4: Display active daily route assignments</p>
+
+<p><strong>Screen 4: Check Same-Route Bus Proximity &amp; Real-Time Alert (Option 6)</strong></p>
+<div class="code-block">
+===== BUS TRACKING AND MANAGEMENT =====
+1. Register a bus
+2. Assign bus to a route
+3. Display registered buses
+4. Display route assignments
+5. Enter/update sample bus location
+6. Check same-route bus proximity
+0. Exit
+Enter your choice: 6
+
+========================================================================================================
+                              REAL-TIME SAME-ROUTE BUS PROXIMITY AUDIT
+========================================================================================================
+
+***********************************************************************************
+ [!] ALERT: SAME-ROUTE BUS PROXIMITY CONFLICT DETECTED (ROUTE 101)!
+     Alert Event  : #1 - BUS BUNCHING HAZARD
+     Vehicle 1    : AP16-TJ-1001 (At: Mangalagiri Bypass)
+     Vehicle 2    : AP16-TJ-1002 (At: Mangalagiri Toll Plaza)
+     Separation   : 0.352 km (Safety Threshold: 0.750 km)
+     Advisory     : Two buses on Route 101 are passing very closely! Depot Manager advisory:
+                    Regulate trailing vehicle speed to maintain scheduled interval.
+***********************************************************************************
+========================================================================================================
+</div>
+<p class="caption">Figure 8: Option 6: Proximity conflict alert triggered on Route 101</p>
+
+<p><strong>Screen 5: Duplicate Bus Allocation Exception Handling</strong></p>
+<div class="code-block">
+Enter bus registration number: AP16-TJ-1001
+Enter route ID: 202
+Enter driver ID: DRV-899
+Enter conductor ID: CND-499
+Enter departure time: 09:30 AM
+Enter date: 2026-11-26
+
+[EXCEPTION CAUGHT]: Error: Bus AP16-TJ-1001 is already assigned to an active route schedule today!
+</div>
+<p class="caption">Figure 9: Custom exception handling preventing duplicate bus assignment</p>
+
+<h2>7.2 Discussion and Interpretation</h2>
+<p>The program successfully satisfies all problem requirements. When two buses on Route 101 approached within 0.352 km of each other, the proximity engine immediately detected the conflict against the 0.750 km threshold and generated a priority alert banner with speed regulation instructions. Duplicate allocation checks prevented double-booking of buses.</p>
+
+<h2>7.3 Limitations</h2>
+<ul>
+    <li>Terminal-based text UI instead of a graphic map.</li>
+    <li>Simulated telemetry rather than real hardware GPS feeds.</li>
+    <li>Calculates great-circle distance rather than road-network turn-by-turn route distance.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h1>CHAPTER 8: CONCLUSION AND FUTURE SCOPE</h1>
+
+<h2>8.1 Conclusion</h2>
+<p>The <strong>Bus Tracking and Management Application</strong> effectively resolves depot-level coordination challenges and bus bunching using an Object-Oriented C++17 architecture. The software establishes clear management of fleet rolling stock and daily schedules, guarantees data integrity via custom exceptions, and detects vehicle bunching in real time via the Haversine proximity engine.</p>
+
+<h2>8.2 Future Scope</h2>
+<ul>
+    <li><strong>IoT Hardware Integration:</strong> Direct connection to in-vehicle OBD-II GPS transceivers via MQTT/HTTP.</li>
+    <li><strong>Graphical GIS Interface:</strong> GUI desktop application using Qt / QML or OpenStreetMap.</li>
+    <li><strong>Machine Learning:</strong> Predictive headway adjustment using historical traffic logs.</li>
+    <li><strong>Passenger Mobile App:</strong> ETA announcements for waiting passengers.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h1>CHAPTER 9: TEAM CONTRIBUTION AND WORK PLAN</h1>
+
+<p class="caption">Table 13: Contribution of each team member</p>
+<table>
+    <tr>
+        <th>Name and Reg. No.</th>
+        <th>Classes / modules developed</th>
+        <th>Other work (testing, report, diagrams)</th>
+    </tr>
+    <tr>
+        <td><strong>Selvasiva S</strong><br>(AP25122230011)</td>
+        <td><code>GeoLocation</code> struct, Haversine formula, <code>Stop</code> and <code>Route</code> classes, proximity alert engine.</td>
+        <td>Mathematical distance modeling, system design flowcharts (Chapters 4 &amp; 5), proximity testing.</td>
+    </tr>
+    <tr>
+        <td><strong>Sarathi R</strong><br>(AP25122230040)</td>
+        <td>Base class <code>Vehicle</code>, derived class <code>Bus</code>, runtime polymorphism, console menus.</td>
+        <td>UML class diagrams, sequence diagrams, literature survey (Chapter 2), requirements analysis (Chapter 3), user manual.</td>
+    </tr>
+    <tr>
+        <td><strong>D.S.Bharani</strong><br>(AP25110100027)</td>
+        <td><code>RouteAssignment</code> class, custom exceptions, CSV file export, operator overloading.</td>
+        <td>Project architecture, exception handling tests, report compilation and formatting, abstract, C++17 verification.</td>
+    </tr>
+</table>
+
+<div class="page-break"></div>
+
+<h1>REFERENCES</h1>
+<p>[1] B. Stroustrup, <em>The C++ Programming Language</em>, 4th ed. Boston, MA, USA: Addison-Wesley, 2013.</p>
+<p>[2] G. F. Newell, "Control of bus bunching," <em>Transportation Research Part B: Methodological</em>, vol. 8, no. 3, pp. 247–248, 1974.</p>
+<p>[3] R. W. Sinnott, "Virtues of the Haversine," <em>Sky and Telescope</em>, vol. 68, no. 2, p. 159, 1984.</p>
+<p>[4] J. L. Bellei and K. A. Small, "Transit schedule adherence and bus bunching mitigation under real-time information," *Journal of Public Transportation*, vol. 18, no. 2, pp. 45–62, 2015.</p>
+<p>[5] cppreference.com, "C++ Standard Library Reference (C++17)," <em>cppreference.com</em>. https://en.cppreference.com (accessed 20 Nov. 2026).</p>
+<p>[6] ISO/IEC, "Programming Languages — C++ (ISO/IEC 14882:2017)," <em>International Organization for Standardization</em>, Geneva, Switzerland, 2017.</p>
+
+</body>
+</html>

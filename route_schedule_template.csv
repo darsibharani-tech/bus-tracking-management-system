@@ -1,0 +1,2 @@
+ScheduleID,BusRegistration,RouteID,RouteName,DriverID,DriverName,ConductorID,DepartureTime,Date,Capacity
+SCH-101A,AP16-TJ-1001,101,SRM AP to VIT-AP Express,DRV-801,K. Srinivas Rao,CND-401,08:00 AM,YYYY-MM-DD,50
